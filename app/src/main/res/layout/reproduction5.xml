@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f5fe"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="25dp"
+        android:layout_margin="@dimen/fab_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/fab_margin">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_outline_sort_24"
+                    app:tint="#535a92"
+                    android:layout_marginEnd="270dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_more_vert_24"
+                    app:tint="#535a92"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="138dp"
+                android:layout_height="112dp"
+                android:layout_marginStart="100dp"
+                android:src="@drawable/repro5" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hira Riaz"
+                    android:textStyle="bold"
+                    android:textSize="27sp"
+                    android:textColor="#4F5791"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UI/UX Designer"
+                    android:textSize="12dp"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/fab_margin">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/fab_margin"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$8900"
+                        android:textStyle="bold"
+                        android:textColor="#4F5791"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Income"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bacground_recherche"
+                    android:src="@drawable/bacground_recherche"
+                    android:tint="#BCBCBC"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/fab_margin"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$5500"
+                        android:textStyle="bold"
+                        android:textColor="#4F5791"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expenses"
+                        tools:ignore="HardcodedText" />
+
+
+                </LinearLayout>
+                <ImageButton
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bacground_recherche"
+                    android:src="@drawable/bacground_recherche"
+                    android:tint="#BCBCBC"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/fab_margin"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$890"
+                        android:textColor="#4F5791"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Loan"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="25dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Overview"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="#575e93"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/semi_fab_margin">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_round_notifications_none_24"
+                app:tint="?android:attr/colorForeground"
+                tools:ignore="MissingConstraints" />
+            <ImageButton
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:background="@drawable/bacground_recherche"
+                android:src="@drawable/bacground_recherche"
+                android:tint="#E30909"
+                tools:layout_editor_absoluteX="15dp"
+                tools:layout_editor_absoluteY="4dp"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="85dp"
+            android:text="Sept 13, 2020"
+            android:textColor="#575e93"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin">
+            <ImageButton
+                android:layout_width="370dp"
+                android:layout_height="75dp"
+                android:background="#00000000"
+                android:src="@drawable/bacground_recherche_2"
+                app:tint="#FFFFFF"
+                tools:ignore="ContentDescription,MissingConstraints" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints,UseCompoundDrawables">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:background="@drawable/bacground_recherche_2"
+                    android:backgroundTint="#e5e8f9"
+                    android:padding="14dp"
+                    android:src="@drawable/ic_baseline_arrow_upward_24"
+                    app:tint="?android:attr/colorForeground" />
+
+                <LinearLayout
+                    android:layout_width="204dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="224dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="22dp"
+                        android:text="Sent"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="22dp"
+                        android:text="Sending Payement to Clients"
+                        android:textSize="11dp"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$150"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:padding="@dimen/fab_margin"/>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin">
+            <ImageButton
+                android:layout_width="370dp"
+                android:layout_height="75dp"
+                android:background="#00000000"
+                android:src="@drawable/bacground_recherche_2"
+                app:tint="#FFFFFF"
+                tools:ignore="ContentDescription,MissingConstraints" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints,UseCompoundDrawables">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:background="@drawable/bacground_recherche_2"
+                    android:backgroundTint="#e5e8f9"
+                    android:padding="14dp"
+                    android:src="@drawable/ic_round_arrow_downward_24"
+                    app:tint="?android:attr/colorForeground" />
+
+                <LinearLayout
+                    android:layout_width="204dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="224dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="22dp"
+                        android:text="Receive"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="22dp"
+                        android:text="Receiving Salary From Company"
+                        android:textSize="11dp"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$250"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:padding="@dimen/fab_margin"/>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin">
+            <ImageButton
+                android:layout_width="370dp"
+                android:layout_height="75dp"
+                android:background="#00000000"
+                android:src="@drawable/bacground_recherche_2"
+                app:tint="#FFFFFF"
+                tools:ignore="ContentDescription,MissingConstraints" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints,UseCompoundDrawables">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:background="@drawable/bacground_recherche_2"
+                    android:backgroundTint="#e5e8f9"
+                    android:padding="14dp"
+                    android:src="@drawable/Money"
+                    app:tint="?android:attr/colorForeground"/>
+
+                <LinearLayout
+                    android:layout_width="204dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="224dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="22dp"
+                        android:text="Loan"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="22dp"
+                        android:text="Loan For The Car"
+                        android:textSize="11dp"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$400"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:padding="@dimen/fab_margin"/>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_margin="@dimen/fab_margin">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/bacground_recherche"
+            android:backgroundTint="#e5eaf7"
+            android:src="@drawable/ic_outline_home_24"
+            app:tint="#8c8e93"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/bacground_recherche"
+            android:backgroundTint="#e5eaf7"
+            android:src="@drawable/ic_outline_calendar_today_24"
+            app:tint="#8c8e93"/>
+
+        <ImageButton
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/bacground_recherche"
+            android:backgroundTint="#e5eaf7"
+            android:src="@drawable/ic_baseline_add_box_24"
+            app:tint="#3f4584" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/bacground_recherche"
+            android:backgroundTint="#e5eaf7"
+            android:src="@drawable/Dollar"
+            app:tint="#8c8e93"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bacground_recherche"
+            android:backgroundTint="#e5eaf7"
+            android:src="@drawable/ic_outline_account_circle_24"
+            app:tint="#8c8e93" />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

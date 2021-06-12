@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f4f9ff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:tint="?android:attr/colorForeground">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="09:41"
+            android:textStyle="bold"
+            android:padding="@dimen/semi_fab_margin"
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="2dp"
+            android:src="@drawable/ic_baseline_signal_cellular_alt_24"
+            app:tint="?android:attr/colorForeground"
+            tools:ignore="ContentDescription" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_wifi_24"
+            android:layout_gravity="end"
+            android:padding="2dp"
+            app:tint="?android:attr/colorForeground"
+            tools:ignore="ContentDescription" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_round_battery_full_24"
+            app:tint="?android:attr/colorForeground"
+            android:layout_gravity="end"
+            android:textColor="@color/white"
+            android:padding="2dp"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/semi_fab_margin"
+            android:text="Applications"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="45dp"
+            android:layout_margin="@dimen/semi_fab_margin"
+            android:src="@drawable/ic_baseline_add_circle_24"
+            app:tint="#FF9800" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/fab_margin">
+
+        <TextView
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/semi_fab_margin"
+            android:text="Current"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/semi_fab_margin"
+            android:text="Executed"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/semi_fab_margin"
+            android:text="All"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:background="@color/white"
+        android:layout_margin="@dimen/fab_margin">
+        <ImageView
+            android:layout_width="370dp"
+            android:layout_height="155dp"
+            tools:ignore="ContentDescription" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_marginStart="@dimen/fab_margin">
+                <TextView
+                    android:layout_width="256dp"
+                    android:layout_height="wrap_content"
+                    android:text="Villa for 16 guests in Ubud"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/flame"
+                    app:tint="#FFC107"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 offers"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="#8c7740"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nov20,2020-Dec 4,2020"
+                android:layout_marginStart="@dimen/fab_margin"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="3dp">
+
+                    <ImageButton
+                        android:layout_width="86dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/bacground_recherche"
+                        android:backgroundTint="#46c9b1"
+                        tools:ignore="ContentDescription,MissingConstraints" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="MissingConstraints,UseCompoundDrawables">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="15dp"
+                            android:text="10 guests"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp">
+
+                    <ImageButton
+                        android:layout_width="114dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/bacground_recherche"
+                        android:backgroundTint="#6747f2"
+                        tools:ignore="ContentDescription,MissingConstraints" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="MissingConstraints,UseCompoundDrawables">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="19dp"
+                            android:layout_marginTop="15dp"
+                            android:text="5 bedrooms"
+                            android:textColor="@color/white"                            android:textSize="14sp" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp">
+
+                    <ImageButton
+                        android:layout_width="124dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/bacground_recherche"
+                        android:backgroundTint="#73ce48"
+                        tools:ignore="ContentDescription,MissingConstraints" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="MissingConstraints,UseCompoundDrawables">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="14dp"
+                            android:layout_marginTop="15dp"
+                            android:text="$1400 - $1800"
+                            android:textColor="@color/white"                            android:textSize="14sp" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="3dp">
+
+                    <ImageButton
+                        android:layout_width="106dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/bacground_recherche"
+                        android:backgroundTint="#478bf2"
+                        tools:ignore="ContentDescription,MissingConstraints" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="MissingConstraints,UseCompoundDrawables">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Open pool"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp">
+
+                    <ImageButton
+                        android:layout_width="86dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/bacground_recherche"
+                        android:backgroundTint="#f26748"
+                        tools:ignore="ContentDescription,MissingConstraints" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="MissingConstraints,UseCompoundDrawables">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="19dp"
+                            android:layout_marginTop="15dp"
+                            android:text="kitchen"
+                            android:textColor="@color/white"                            android:textSize="14sp" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp">
+
+                    <ImageButton
+                        android:layout_width="56dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/bacground_recherche"
+                        android:backgroundTint="#bb48f2"
+                        tools:ignore="ContentDescription,MissingConstraints" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="MissingConstraints,UseCompoundDrawables">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="14dp"
+                            android:layout_marginTop="15dp"
+                            android:text="WiFI"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="25dp">
+
+        <TextView
+            android:layout_width="234dp"
+            android:layout_height="wrap_content"
+            android:text="Popular stays"
+            android:textColor="#3a415e"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:layout_marginStart="65dp"
+            android:src="@drawable/ic_baseline_tune_24"
+            android:tint="#7353ce"
+            android:background="@drawable/bacground_recherche_2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="233dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:layout_marginStart="55dp"
+            android:orientation="horizontal">>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="9dp"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/Profile2"
+                    tools:ignore="ContentDescription" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="9dp"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/Profile2"
+                    tools:ignore="ContentDescription" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:layout_marginStart="55dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="9dp"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/Profile2"
+                    tools:ignore="ContentDescription" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="9dp"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/Profile2"
+                    tools:ignore="ContentDescription" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_dashboard_24"
+                android:tint="#FFC107"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Applications"
+                android:textSize="12dp"
+                android:textColor="#FF9800" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_explore_24"
+                app:tint="#532bc3" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discover"
+                android:textSize="12dp"
+                android:textColor="#532BC3"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_comment_24"
+                app:tint="#532bc3" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="community"
+                android:textSize="12dp"
+                android:textColor="#532BC3"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_bookmarks_24"
+                app:tint="#532bc3" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bookmarks"
+                android:textSize="12dp"
+                android:textColor="#532BC3"/>
+        </LinearLayout> <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_margin="4dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_settings_24"
+            app:tint="#532bc3" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textSize="12dp"
+            android:textColor="#532BC3"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bacground_recherche">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:tint="?android:attr/colorForeground">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="09:41"
+            android:textStyle="bold"
+            android:padding="@dimen/semi_fab_margin"
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="2dp"
+            android:src="@drawable/ic_baseline_signal_cellular_alt_24"
+            app:tint="?android:attr/colorForeground"
+            tools:ignore="ContentDescription" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_wifi_24"
+            android:layout_gravity="end"
+            android:padding="2dp"
+            app:tint="?android:attr/colorForeground"
+            tools:ignore="ContentDescription" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_round_battery_full_24"
+            app:tint="?android:attr/colorForeground"
+            android:layout_gravity="end"
+            android:textColor="@color/white"
+            android:padding="2dp"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="22dp">
+        <TextView
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/semi_fab_margin"
+            android:text="Applications"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="45dp"
+            android:layout_margin="@dimen/semi_fab_margin"
+            android:src="@drawable/ic_baseline_add_circle_24"
+            app:tint="#FF9800" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:alpha="0.4"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="match_parent"
+            android:layout_height="655dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:src="@drawable/bacground_recherche_with_white_border3"
+            tools:ignore="ContentDescription,MissingConstraints"
+            tools:layout_editor_absoluteY="101dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New application"
+                android:textStyle="bold"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="110dp"
+                android:layout_marginStart="@dimen/semi_fab_margin"
+                android:padding="4dp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/semi_fab_margin"
+                android:layout_marginEnd="@dimen/semi_fab_margin"
+                android:padding="4dp"
+                android:text="Create an application for the hosts indicating all the necessary living conditions"
+                android:textSize="13sp"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Destination"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:padding="4dp"
+                android:layout_marginStart="40sp"
+                tools:ignore="HardcodedText" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp">
+                <ImageButton
+                    android:layout_width="341dp"
+                    android:layout_height="44dp"
+                    android:background="#00000000"
+                    android:src="@drawable/bacground_recherche_with_white_border3"
+                    tools:ignore="ContentDescription,MissingConstraints" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints,UseCompoundDrawables">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="230dp"
+                        android:text="Ubud"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="@dimen/semi_fab_margin"
+                        android:src="@drawable/ic_baseline_cancel_24"
+                        app:tint="#DCD4D4" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="@dimen/fab_margin"
+                        tools:ignore="UselessParent">
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Date"
+                                    android:textStyle="bold"
+                                    android:textSize="13sp"
+                                    android:textColor="@color/black"
+                                    android:padding="4dp"
+                                    android:layout_marginStart="@dimen/semi_fab_margin"
+                                    tools:ignore="HardcodedText" />
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_marginTop="@dimen/semi_fab_margin">
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="3sp">
+                                        <ImageButton
+                                            android:layout_width="154dp"
+                                            android:layout_height="45dp"
+                                            android:background="#00000000"
+                                            android:src="@drawable/bacground_recherche_with_white_border3"
+                                            tools:ignore="ContentDescription,MissingConstraints" />
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal"
+                                            tools:ignore="MissingConstraints,UseCompoundDrawables">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="15dp"
+                                                android:layout_marginStart="20dp"
+                                                android:text="Sept, 24, 2020"
+                                                android:textSize="14sp" />
+                                            <ImageView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="13dp"
+                                                android:layout_marginStart="@dimen/semi_fab_margin"
+                                                android:src="@drawable/ic_baseline_calendar_today_24"
+                                                app:tint="#959090" />
+                                        </LinearLayout>
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="@dimen/fab_margin">
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Nights"
+                                    android:textStyle="bold"
+                                    android:textSize="13sp"
+                                    android:textColor="@color/black"
+                                    android:padding="4dp"
+                                    android:layout_marginStart="@dimen/semi_fab_margin"
+                                    tools:ignore="HardcodedText" />
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_marginTop="@dimen/semi_fab_margin">
+
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="3sp"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="154dp"
+                                            android:layout_height="45dp"
+                                            android:background="#00000000"
+                                            android:src="@drawable/bacground_recherche_with_white_border3"
+                                            tools:ignore="ContentDescription,MissingConstraints" />
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal"
+                                            tools:ignore="MissingConstraints,UseCompoundDrawables">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="15dp"
+                                                android:layout_marginStart="20dp"
+                                                android:text="10"
+                                                android:textSize="14sp" />
+
+                                        </LinearLayout>
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="@dimen/fab_margin">
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Guests"
+                                    android:textStyle="bold"
+                                    android:textSize="13sp"
+                                    android:textColor="@color/black"
+                                    android:padding="4dp"
+                                    android:layout_marginStart="@dimen/semi_fab_margin"
+                                    tools:ignore="HardcodedText" />
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_marginTop="@dimen/semi_fab_margin">
+
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="3sp"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="154dp"
+                                            android:layout_height="45dp"
+                                            android:background="#00000000"
+                                            android:src="@drawable/bacground_recherche_with_white_border3"
+                                            tools:ignore="ContentDescription,MissingConstraints" />
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal"
+                                            tools:ignore="MissingConstraints,UseCompoundDrawables">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="15dp"
+                                                android:layout_marginStart="20dp"
+                                                android:text="2"
+                                                android:textSize="14sp" />
+
+                                        </LinearLayout>
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="@dimen/fab_margin">
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Bedrooms"
+                                    android:textStyle="bold"
+                                    android:textSize="13sp"
+                                    android:textColor="@color/black"
+                                    android:padding="4dp"
+                                    android:layout_marginStart="@dimen/semi_fab_margin"
+                                    tools:ignore="HardcodedText" />
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_marginTop="@dimen/semi_fab_margin">
+
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="3sp"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="154dp"
+                                            android:layout_height="45dp"
+                                            android:background="#00000000"
+                                            android:src="@drawable/bacground_recherche_with_white_border3"
+                                            tools:ignore="ContentDescription,MissingConstraints" />
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal"
+                                            tools:ignore="MissingConstraints,UseCompoundDrawables">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="15dp"
+                                                android:layout_marginStart="20dp"
+                                                android:text="1"
+                                                android:textSize="14sp" />
+
+                                        </LinearLayout>
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:padding="4dp"
+                android:layout_marginStart="40sp"
+                tools:ignore="HardcodedText" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="6dp">
+                <ImageButton
+                    android:layout_width="341dp"
+                    android:layout_height="44dp"
+                    android:background="#00000000"
+                    android:src="@drawable/bacground_recherche_with_white_border3"
+                    tools:ignore="ContentDescription,MissingConstraints" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints,UseCompoundDrawables">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="205dp"
+                        android:text="Any type"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="@dimen/semi_fab_margin"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+                        app:tint="?android:attr/colorForeground"/>
+
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price per night"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:padding="4dp"
+                    android:layout_marginStart="40sp"
+                    android:layout_marginEnd="116dp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$20-$6400"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:textColor="#8C73D7"
+                    android:padding="4dp"
+                    android:layout_marginStart="40sp"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$0"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:textColor="#8C73D7"
+                    android:padding="4dp"
+                    android:layout_marginStart="40sp"
+                    android:layout_marginEnd="204dp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$8000+"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:textColor="#8C73D7"
+                    android:padding="4dp"
+                    android:layout_marginStart="40sp"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Features"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:padding="4dp"
+                android:layout_marginStart="40sp"
+                android:layout_marginEnd="116dp"
+                tools:ignore="HardcodedText" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/fab_margin"
+                android:layout_margin="@dimen/fab_margin">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp">
+
+                    <ImageButton
+                        android:layout_width="86dp"
+                        android:layout_height="45dp"
+                        android:background="#00000000"
+                        android:src="@drawable/bacground_recherche_with_white_border3"
+                        tools:ignore="ContentDescription,MissingConstraints" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="MissingConstraints,UseCompoundDrawables">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="10dp"
+                            android:text="Open pool"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp">
+
+                    <ImageButton
+                        android:layout_width="56dp"
+                        android:layout_height="45dp"
+                        android:background="#00000000"
+                        android:src="@drawable/bacground_recherche_with_white_border3"
+                        tools:ignore="ContentDescription,MissingConstraints" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="MissingConstraints,UseCompoundDrawables">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="10dp"
+                            android:text="WiFi"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp">
+
+                    <ImageButton
+                        android:layout_width="86dp"
+                        android:layout_height="45dp"
+                        android:background="#00000000"
+                        android:src="@drawable/bacground_recherche_with_white_border3"
+                        tools:ignore="ContentDescription,MissingConstraints" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="MissingConstraints,UseCompoundDrawables">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="19dp"
+                            android:text="Dunno"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp">
+
+                    <ImageButton
+                        android:layout_width="86dp"
+                        android:layout_height="45dp"
+                        android:background="#00000000"
+                        android:src="@drawable/bacground_recherche_with_white_border3"
+                        tools:ignore="ContentDescription,MissingConstraints" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="MissingConstraints,UseCompoundDrawables">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="14dp"
+                            android:text="Parking"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout></LinearLayout>
+        </LinearLayout>
+        <ImageButton
+            android:layout_width="370dp"
+            android:layout_height="54dp"
+            android:background="#00000000"
+            android:src="@drawable/bacground_recherche_2"
+            app:tint="#FFC107"
+            tools:ignore="ContentDescription,MissingConstraints"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="568dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/fab_margin"
+            android:text="Create application"
+            android:textColor="#424242"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="566dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

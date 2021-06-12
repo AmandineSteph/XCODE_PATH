@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#2f2c53">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                    android:layout_margin="30dp"
+                    tools:ignore="ContentDescription" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="14dp"
+                    android:layout_marginStart="225dp"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                    android:background="@drawable/bacground_recherche_2"
+                    android:backgroundTint="#20b9fc"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Account"
+                android:textSize="45dp"
+                android:textStyle="bold"
+                android:textColor="#AEABAB"
+                tools:ignore="HardcodedText,SpUsage"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:text="Photo"
+                    android:textColor="#605e81"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="30dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="30dp"
+                        android:background="@drawable/bacground_recherche"
+                        android:backgroundTint="#45426c"
+                        android:src="@drawable/ic_baseline_account_box_24"
+                        android:padding="15dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/fab_margin"
+                        android:layout_marginStart="10dp"
+                        android:text="Upload Image"
+                        android:textSize="19dp"
+                        android:textStyle="bold"
+                        android:textColor="#2489bd"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/fab_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="Langage"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        android:textColor="#605e81"
+                        tools:ignore="HardcodedText" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:text="David Clerisseau"
+                        android:textColor="#AEABAB"
+                        android:textSize="19dp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageButton
+                        android:layout_width="240dp"
+                        android:layout_height="12dp"
+                        android:src="@drawable/bacground_recherche_2"
+                        android:backgroundTint="#605e81"/>
+
+                </LinearLayout>
+
+                </LinearLayout>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:padding="@dimen/fab_margin"
+                        android:text="Gender"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        android:textColor="#605e81"
+                        tools:ignore="HardcodedText" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bacground_recherche"
+                    android:backgroundTint="#5665fb"
+                    android:padding="17dp"
+                    android:src="@drawable/Gender1" />
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/Gender2"
+                        android:background="@drawable/bacground_recherche"
+                        android:backgroundTint="#45426c " />
+
+                </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/fab_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="27dp"
+                android:text="Age"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textColor="#605e81"
+                tools:ignore="HardcodedText" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:text="28"
+                    android:textColor="#AEABAB"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <ImageButton
+                    android:layout_width="240dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/bacground_recherche_2"
+                    android:backgroundTint="#605e81"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/fab_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="@dimen/fab_margin"
+                android:text="Email"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textColor="#605e81"
+                tools:ignore="HardcodedText" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:text="clerisseau@gmail.com"
+                    android:textColor="#AEABAB"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+                <ImageButton
+                    android:layout_width="240dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/bacground_recherche_2"
+                    android:backgroundTint="#605e81"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>

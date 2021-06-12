@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#191919">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="08:00"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/semi_fab_margin"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:src="@drawable/ic_baseline_signal_cellular_alt_24"
+            tools:ignore="ContentDescription" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_wifi_24"
+            android:layout_gravity="end"
+            android:textColor="@color/white"
+            android:padding="7dp"
+            tools:ignore="ContentDescription" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_round_battery_full_24"
+            android:layout_gravity="end"
+            android:textColor="@color/white"
+            android:padding="4dp"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            android:textColor="@color/white"
+            tools:ignore="ContentDescription" />
+        <ImageView
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/semi_fab_margin"
+            tools:ignore="ContentDescription" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_round_search_24"
+            android:textColor="@color/white"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="30dp"
+                android:layout_margin="@dimen/semi_fab_margin">
+
+                <ImageView
+                    android:layout_width="145dp"
+                    android:layout_height="145dp"
+                    android:src="@drawable/repro9"
+                    tools:ignore="ContentDescription" />
+            </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/semi_fab_margin"
+                            android:text="Album"
+                            android:textColor="#888888"/>
+
+                        <ImageButton
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/bacground_recherche"
+                            android:backgroundTint="#888888"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="17 Songs"
+                            android:textColor="#888888"
+                            android:padding="@dimen/semi_fab_margin"
+                            tools:ignore="HardcodedText" />
+
+                        <ImageButton
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/bacground_recherche"
+                            android:backgroundTint="#888888"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2013"
+                            android:textColor="#888888"
+                            android:padding="@dimen/semi_fab_margin"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fragments"
+                        android:textColor="#FFFFFF"
+                        android:textSize="48sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mr. Kitty"
+                        android:textColor="#888888"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:text=".............."
+                        android:textColor="#888888"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_outline_music_video_24"
+                            app:tint="#CAC4C4"
+                            android:padding="@dimen/semi_fab_margin"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_arrow_circle_down_24"
+                            app:tint="#CAC4C4"
+                            android:padding="@dimen/semi_fab_margin"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_more_24"
+                            app:tint="#CAC4C4"
+                            android:padding="@dimen/semi_fab_margin"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:src="@drawable/bacground_recherche_2"
+                app:tint="#FFFFFF"
+                tools:ignore="ContentDescription,MissingConstraints" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="18dp"
+                    android:src="@drawable/ic_baseline_play_arrow_2"
+                    app:tint="?android:attr/colorForeground" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Play"
+                    android:textStyle="bold"
+                    app:tint="?android:attr/colorForeground"
+                    tools:ignore="HardcodedText,MissingConstraints" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:src="@drawable/bacground_recherche_2"
+                app:tint="#3A3A3A"
+                tools:ignore="ContentDescription,MissingConstraints" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="18dp"
+                    android:src="@drawable/ic_round_shuffle_24"
+                    android:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Shuffle"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    tools:ignore="HardcodedText,MissingConstraints" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="15dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="0dp"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01"
+                android:textColor="@color/white"
+                android:layout_margin="@dimen/fab_margin"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="192dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="90dp"
+                    android:text="Insects"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="68dp"
+                        android:layout_height="wrap_content"
+                        android:text="Mr. Kitty"
+                        android:textColor="#5E5E5E" />
+                    <ImageButton
+                        android:layout_width="4dp"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bacground_recherche"
+                        android:backgroundTint="#888888"/>
+                    <TextView
+                        android:layout_width="103dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginEnd="90dp"
+                        android:text="3:56"
+                        android:textColor="#5E5E5E" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="29dp"
+                android:layout_margin="@dimen/fab_margin"
+                android:src="@drawable/ic_baseline_more_horiz_24" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="0dp"
+            tools:ignore="ExtraText">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="02"
+                android:textColor="@color/white"
+                android:layout_margin="@dimen/fab_margin"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="192dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="90dp"
+                    android:text="Heaven"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="68dp"
+                        android:layout_height="wrap_content"
+                        android:text="Mr. Kitty"
+                        android:textColor="#5E5E5E" />
+                    <ImageButton
+                        android:layout_width="4dp"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bacground_recherche"
+                        android:backgroundTint="#888888"/>
+                    <TextView
+                        android:layout_width="103dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginEnd="90dp"
+                        android:text="4:43"
+                        android:textColor="#5E5E5E" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="29dp"
+                android:layout_margin="@dimen/fab_margin"
+                android:src="@drawable/ic_baseline_more_horiz_24" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="0dp"
+            tools:ignore="ExtraText">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:src="@drawable/ic_baseline_signal_cellular_alt_24" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="192dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="90dp"
+                    android:text="Unstable"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="68dp"
+                        android:layout_height="wrap_content"
+                        android:text="Mr. Kitty"
+                        android:textColor="#5E5E5E" />
+                    <ImageButton
+                        android:layout_width="4dp"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bacground_recherche"
+                        android:backgroundTint="#888888"/>
+                    <TextView
+                        android:layout_width="103dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginEnd="90dp"
+                        android:text="2:52"
+                        android:textColor="#5E5E5E" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="29dp"
+                android:layout_margin="@dimen/fab_margin"
+                android:src="@drawable/ic_baseline_more_horiz_24" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="0dp"
+            tools:ignore="ExtraText">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="04"
+                android:textColor="@color/white"
+                android:layout_margin="@dimen/fab_margin"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="192dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="90dp"
+                    android:text="Sacrifice"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="68dp"
+                        android:layout_height="wrap_content"
+                        android:text="Mr. Kitty"
+                        android:textColor="#5E5E5E" />
+                    <ImageButton
+                        android:layout_width="4dp"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bacground_recherche"
+                        android:backgroundTint="#888888"/>
+                    <TextView
+                        android:layout_width="103dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginEnd="90dp"
+                        android:text="6:54"
+                        android:textColor="#5E5E5E" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="29dp"
+                android:layout_margin="@dimen/fab_margin"
+                android:src="@drawable/ic_baseline_more_horiz_24" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="0dp"
+            tools:ignore="ExtraText">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="05"
+                android:textColor="@color/white"
+                android:layout_margin="@dimen/fab_margin"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="192dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="90dp"
+                    android:text="Holy Death"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="68dp"
+                        android:layout_height="wrap_content"
+                        android:text="Mr. Kitty"
+                        android:textColor="#5E5E5E" />
+                    <ImageButton
+                        android:layout_width="4dp"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bacground_recherche"
+                        android:backgroundTint="#888888"/>
+                    <TextView
+                        android:layout_width="103dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginEnd="90dp"
+                        android:text="2:58"
+                        android:textColor="#5E5E5E" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="29dp"
+                android:layout_margin="@dimen/fab_margin"
+                android:src="@drawable/ic_baseline_more_horiz_24" />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:src="@drawable/bacground_recherche_2"
+            app:tint="#FFFFFF"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="0dp"
+                tools:ignore="ExtraText">
+
+                <ImageView
+                    android:layout_width="88dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/repro9" />
+
+                <LinearLayout
+                    android:layout_width="189dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="192dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="90dp"
+                        android:text="Unstable"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                        <TextView
+                            android:layout_width="68dp"
+                            android:layout_height="wrap_content"
+                            android:text="Mr. Kitty"
+                            android:textColor="#5E5E5E" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="29dp"
+                    android:layout_margin="@dimen/semi_fab_margin"
+                    android:src="@drawable/ic_baseline_favorite_border_24"
+                    app:tint="@color/black" />
+                <ImageView
+                    android:layout_width="58dp"
+                    android:layout_height="39dp"
+                    android:layout_margin="@dimen/semi_fab_margin"
+                    android:src="@drawable/ic_baseline_pause_24"
+                    app:tint="@color/black" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_outline_home_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Images"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_round_search_24" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_outline_library_music_24" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Library"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_outline_whatshot_24" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hotlist"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

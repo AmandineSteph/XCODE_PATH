@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f4f9ff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:tint="?android:attr/colorForeground">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hi Jenna,"
+            android:textStyle="bold"
+            android:textColor="#8d91aa"
+            android:textSize="20sp"
+            android:padding="2dp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="Explore podcasts"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="29dp"
+            tools:ignore="MissingConstraints">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp">
+                <ImageButton
+                    android:layout_width="106dp"
+                    android:layout_height="45dp"
+                    android:background="#00000000"
+                    android:src="@drawable/bacground_recherche_with_white_border3"
+                    android:tint="#ff7461"
+                    tools:ignore="ContentDescription,MissingConstraints" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints,UseCompoundDrawables">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Yoga"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:text="Fitness"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:text="Education"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:text="Design"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="17dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="4dp">
+        <ImageView
+            android:layout_width="299dp"
+            android:layout_height="166dp"
+            android:src="@drawable/asset"
+            tools:ignore="ContentDescription" />
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_margin="2dp">
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="10dp"
+            android:background="@drawable/bacground_recherche"
+            android:backgroundTint="#FC7462"
+            android:layout_margin="@dimen/semi_fab_margin"/>
+        <ImageButton
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/bacground_recherche"
+            android:backgroundTint="#f7c7c3"
+            android:layout_margin="@dimen/semi_fab_margin"/>
+        <ImageButton
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/bacground_recherche"
+            android:backgroundTint="#F7C7C3"
+            android:layout_margin="@dimen/semi_fab_margin"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="6dp"
+            android:gravity="center_horizontal">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/bacground_recherche_2"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/ic_baseline_mic_none_24"
+                    app:tint="#B3B3B3"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="6dp"
+            android:gravity="center_horizontal">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/bacground_recherche_2"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/ic_baseline_favorite_border_24"
+                    app:tint="#B3B3B3"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="0dp"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Popular"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="6dp"
+            android:gravity="center_horizontal">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/bacground_recherche_2"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/ic_baseline_access_time_24"
+                    app:tint="#B3B3B3"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recent"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="6dp"
+            android:gravity="center_horizontal">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/bacground_recherche_2"
+                    android:backgroundTint="#ff7461"
+                    android:src="@drawable/flame"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:tint="#FFFFFF"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trending"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="306dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/semi_fab_margin"
+            android:text="Trending"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/semi_fab_margin"
+            android:text="View all"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="@dimen/semi_fab_margin">
+                <ImageButton
+                    android:layout_width="340dp"
+                    android:layout_height="78dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:src="@drawable/bacground_recherche_2"
+                    android:tint="#FFFFFF"
+                    tools:ignore="ContentDescription,MissingConstraints" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="9dp">
+
+                        <ImageView
+                            android:layout_width="55dp"
+                            android:layout_height="65dp"
+                            android:src="@drawable/Profile2"
+                            tools:ignore="ContentDescription" />
+                    </androidx.cardview.widget.CardView>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginEnd="88dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Postive thinking"
+                            android:textStyle="bold"
+                            android:textColor="#000" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="By Jhon Smith"
+                            android:textSize="11dp"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginTop="19dp"
+                        android:background="@drawable/bacground_recherche"
+                        android:backgroundTint="#fee9e6"
+                        android:src="@drawable/ic_baseline_play_arrow_24"
+                        android:tint="#ff7463"
+                        tools:ignore="UseAppTint" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp">
+                <ImageButton
+                    android:layout_width="340dp"
+                    android:layout_height="78dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:src="@drawable/bacground_recherche_2"
+                    android:tint="#FFFFFF"
+                    tools:ignore="ContentDescription,MissingConstraints" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="9dp">
+                        <ImageView
+                            android:layout_width="55dp"
+                            android:layout_height="65dp"
+                            android:src="@drawable/Profile2"
+                            tools:ignore="ContentDescription" />
+                    </androidx.cardview.widget.CardView>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginEnd="88dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Postive thinking"
+                            android:textStyle="bold"
+                            android:textColor="#000" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="By Jhon Smith"
+                            android:textSize="11dp"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginTop="19dp"
+                        android:background="@drawable/bacground_recherche"
+                        android:backgroundTint="#fee9e6"
+                        android:src="@drawable/ic_baseline_play_arrow_24"
+                        android:tint="#ff7463"
+                        tools:ignore="UseAppTint" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_outline_home_24"
+            app:tint="#ff7463"/>
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_round_search_24"
+            app:tint="#CDCBCB"/>
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_baseline_mic_none_24"
+            app:tint="#CDCBCB"/>
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_outline_playlist_play_24"
+            app:tint="#CDCBCB"/>
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_outline_person_24"
+            app:tint="#CDCBCB"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
